@@ -7,7 +7,7 @@ interface MarkdownWrapperProps {
 
 const preprocessMarkdown = (text: string) => {
     // Insert newline before each "- " if it's not already on a new line
-    return text.replace(/(?<!\n)- /g, '\n- ');
+    return text?.replace(/(?<!\n)- /g, '\n- ') || '';
 };
 
 export default function MarkdownWrapper({ content }: MarkdownWrapperProps) {
