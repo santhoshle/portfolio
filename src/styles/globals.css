@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
+
+@theme {
+  --font-primary: Montserrat, sans-serif;
+  --font-secondary: Open Sans, sans-serif;
+
+  --color-background: oklch(32.44% 0.023 264.18);
+  --color-text: oklch(92.86% 0.007 277.16);
+  --color-primary: oklch(69.42% 0.074 252.04);
+  --color-accent: oklch(45.87% 0.036 262.34);
+  --color-card: oklch(27.67% 0.018 266.32);
+}

@@ -1,0 +1,120 @@
+{
+    "intro": {
+      "name": "L.E.Santhosh Kumar",
+      "role": "Software Engineer",
+      "subHeading": "I design and build web applications with a focus on modern web technologies.",
+      "menus": [
+        {
+          "id": "about",
+          "title": "About"
+        },
+        {
+          "id": "experience",
+          "title": "Experience"
+        },
+        {
+          "id": "projects",
+          "title": "Projects"
+        }
+      ]
+    },
+    "about": [
+      "With over 11 years of experience in Java and ReactJS development, I specialize in building scalable architectures, robust backend services, and dynamic front-end interfaces. I have led projects that improved system performance, security, and user engagement, delivering high-quality software across diverse domains.",
+      "**Notable achievements include:**- Developing a web-based emulator for AS400, modernizing legacy systems using ReactJS and Spring Boot.- Implementing Elasticsearch-powered search, increasing data retrieval speed and accuracy.- Designing a sports game simulation module that reduced testing time by 70%, accelerating release cycles.",
+      "I have also worked on critical security implementations like MSSQL Always On encryption and identity integration via OKTA, ensuring compliance and system resilience. My strength lies in full-stack engineering, system optimization, and driving secure, maintainable codebases.",
+      "Beyond full-stack development, I’m a passionate solo game developer, currently exploring Unreal Engine and Blender to build immersive 2D/3D game worlds, inspired by my favorite RPGs."
+    ],
+    "experience": [
+      {
+        "company": "Azentio",
+        "role": "Senior Engineer",
+        "years": "Apr 2019 - Present",
+        "description": "- Developed and delivered end-to-end modules, improving project delivery speed by 30%.- Designed a Spring microservices architecture, enhancing scalability and reducing downtime by 15%.- Collaborated closely with product, DevOps, and QA, ensuring timely, high-quality releases.- Mentored junior developers, elevating code quality through guidance on standards and best practices.",
+        "skills": [
+          "Java",
+          "Spring Boot",
+          "React",
+          "Redux"
+        ]
+      },
+      {
+        "company": "Vernalis (Currently Orion)",
+        "role": "Associate",
+        "years": "Jun 2014 - Apr 2019",
+        "description": "- Implemented MSSQL column-level encryption and OKTA authentication, strengthening security and compliance.- Integrated Clickatell for SMS notifications, streamlining user communication.- Built a scalable Sports ERP API, improving data integration and access.- Engineered RESTful services for game statistics, improving retrieval speed by 40%.- Led the development of a sports game simulation module, reducing testing time by 70%.",
+        "skills": [
+          "Java",
+          "Spring Boot",
+          "Play Framework",
+          "Elasticsearch"
+        ]
+      },
+      {
+        "company": "Espros Technology Consultants (P) Ltd",
+        "role": "Software Engineer",
+        "years": "Sep 2013 - Jun 2014",
+        "description": "- Owned and maintained a JavaFX-based Desktop Application, ensuring stability and performance.- Integrated Highcharts for visual data insights, improving usability and clarity.- Built a custom CMS, improving content delivery speed by 30% and enhancing system efficiency.",
+        "skills": [
+          "Java",
+          "Spring MVC",
+          "JavaFX",
+          "Highcharts"
+        ]
+      },
+      {
+        "company": "Personal Game Dev",
+        "role": "Hobbyist Game Developer",
+        "years": "2024 - Present",
+        "description": "- Designing and prototyping 2D and 3D gameplay mechanics using Unreal Engine 5, with a focus on action RPG and exploration-based genres.- Developing skills in Blueprint visual scripting and transitioning into C++ to build reusable gameplay systems like inventory, combat, and quest management.- Creating and animating 3D models, environments, and characters using Blender, including asset sculpting, UV mapping, rigging, and basic animation cycles.",
+        "skills": [
+          "Unreal Engine",
+          "Blueprints",
+          "Blender",
+          "Game Design",
+          "3D Modeling"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Portfolio Website",
+        "description": "A personal portfolio built with Next.js and Tailwind.",
+        "link": "https://github.com/santhoshle/portfolio",
+        "icon": ""
+      },
+      {
+        "title": "Unreal Engine Practice Projects",
+        "description": "A collection of solo game dev experiments including basic mechanics, and level design made in Unreal Engine.",
+        "link": "https://github.com/santhoshle/unreal-practice",
+        "icon": ""
+      },
+      {
+        "title": "Blender Asset Portfolio",
+        "description": "Showcase of low-poly game assets and stylized environment models created with Blender for personal game projects.",
+        "link": "https://www.artstation.com/santhoshlaguduwa ",
+        "icon": ""
+      }
+    ],
+    "socialLinks": [
+      {
+        "name": "GitHub",
+        "icon": "FaGithub",
+        "url": "https://github.com/santhoshle"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "FaLinkedinIn",
+        "url": "https://www.linkedin.com/in/santhoshle/"
+      },
+      {
+        "name": "Codepen",
+        "icon": "FaCodepen",
+        "url": "https://codepen.io/santhoshle"
+      },
+      {
+        "name": "Itch",
+        "icon": "FaItchIo",
+        "url": "https://solaraslight.itch.io/"
+      }
+    ]
+  }
