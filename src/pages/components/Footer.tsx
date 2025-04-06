@@ -6,7 +6,7 @@ interface FooterProps {
   name: string
 }
 
-export default function Footer({ links, name }: FooterProps) {
+export default function Footer({ links = [], name = '' }: FooterProps) {
   return (
     <footer className="mt-16 text-center">
       <div className="flex justify-center gap-6">

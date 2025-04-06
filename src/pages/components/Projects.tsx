@@ -12,7 +12,7 @@ interface ProjectProps {
   projects: Project[];
 }
 
-export default function Projects({ projects }: ProjectProps) {
+export default function Projects({ projects = [] }: ProjectProps) {
   return (
     <section className="space-y-4">
       <h2 className="text-2xl pb-4 font-bold text-primary">Projects</h2>

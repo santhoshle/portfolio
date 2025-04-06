@@ -14,7 +14,7 @@ interface ExperienceProps {
   experience: Experience[];
 }
 
-export default function Experience({ experience }: ExperienceProps) {
+export default function Experience({ experience = [] }: ExperienceProps) {
   return (
     <section className="space-y-4">
       <h2 className="text-2xl pb-4 font-bold text-primary">Experience</h2>

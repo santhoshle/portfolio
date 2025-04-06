@@ -7,7 +7,7 @@ interface AboutProps {
 
 
 
-export default function About({ about }: AboutProps) {
+export default function About({ about = [] }: AboutProps) {
   return (
     <section className="space-y-4">
       {about.map((para, idx) => (
