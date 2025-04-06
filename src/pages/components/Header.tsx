@@ -12,6 +12,12 @@ interface HeaderProps {
 }
 
 export default function Header({ data, activeSection, setActiveSection }: HeaderProps) {
+  const {
+    name = '',
+    role = '',
+    subHeading = '',
+    menus = [],
+  } = data || {};
   return (
     <>
       {/* Fixed menu at the top */}
