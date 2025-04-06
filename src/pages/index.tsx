@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import type { GetStaticProps } from 'next';
 import data from '../data/data.json';
+import { PortfolioData } from '../types';
 import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -18,7 +19,7 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default function Home({ data }: { data: any }) {
+export default function Home({ data }: { data: PortfolioData }) {
   const [activeSection, setActiveSection] = useState('about');
 
   const aboutRef = useRef<HTMLDivElement>(null);
