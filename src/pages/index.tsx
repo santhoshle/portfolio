@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import type { GetStaticProps } from 'next';
 import data from '../data/data.json';
 import Header from './components/Header';
 import About from './components/About';
@@ -9,7 +10,15 @@ import useSectionObserver from '../hooks/useSectionObserver';
 import Footer from './components/Footer';
 import { motion } from 'framer-motion';
 
-export default function Home() {
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      data,
+    },
+  };
+};
+
+export default function Home({ data }: { data: any }) {
   const [activeSection, setActiveSection] = useState('about');
 
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -48,24 +57,24 @@ export default function Home() {
         transition={{ duration: 0.8 }}
       >
         <Header
-          data={data.intro}
+          data={data?.intro}
           activeSection={activeSection}
           setActiveSection={scrollToSection}
         />
 
         <main className="max-w-5xl mx-auto space-y-12 mt-4">
           <section id="about" ref={aboutRef}>
-            <About about={data.about} />
+            <About about={data?.about} />
           </section>
           <section id="experience" ref={experienceRef}>
-            <Experience experience={data.experience} />
+            <Experience experience={data?.experience} />
           </section>
           <section id="projects" ref={projectsRef}>
-            <Projects projects={data.projects} />
+            <Projects projects={data?.projects} />
           </section>
         </main>
 
-        <Footer links={data.socialLinks} name={data.intro.name} />
+        <Footer links={data?.socialLinks} name={data?.intro?.name} />
       </motion.div>
     </>
   );

@@ -5,8 +5,6 @@ interface AboutProps {
   about: string[];
 }
 
-
-
 export default function About({ about = [] }: AboutProps) {
   return (
     <section className="space-y-4">
