@@ -12,8 +12,8 @@ This is my personal portfolio website built with **Next.js**, **TypeScript**, **
 - **Styling:** Tailwind CSS
 - **Animations:** Framer Motion
 - **Icons:** React Icons
-- **Deployment:** DigitalOcean + Nginx
-- **Domain:** GoDaddy DNS + Let's Encrypt (SSL)
+- **Deployment:** Vercel (Optimized for Next.js)
+- **Domain:** GoDaddy DNS mapped to Vercel with automatic SSL
 
 ## 🛠 Local Development
 
@@ -24,4 +24,8 @@ npm install
 npm run dev
 ```
 
-Check demo @ https://santhoshle.dev
+Then open http://localhost:3000 🚀
+
+##🔗 Demo
+Check the live project here:
+👉 https://santhoshle.dev
