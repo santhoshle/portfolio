@@ -1,6 +1,7 @@
 export interface MenuItem {
     id: string;
     title: string;
+    path: string;
   }
   
   export interface IntroData {
@@ -38,4 +39,15 @@ export interface MenuItem {
     projects: Project[];
     socialLinks: SocialLink[];
   }
-  
+
+  // An entry in src/data/roadmap.json (see README for field notes)
+  export interface RoadmapItem {
+    title: string;
+    year?: number | string;
+    summary?: string;
+    author?: string;
+    image?: string;
+    status?: string;
+    repoUrl?: string;
+    demoUrl?: string;
+  }

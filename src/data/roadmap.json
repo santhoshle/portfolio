@@ -1,0 +1,136 @@
+[
+  {
+    "title": "Ping Pong",
+    "year": 2025,
+    "summary": "A classic pong-style game built in Unreal Engine to learn 2D input, ball physics and UI.",
+    "author": "Solaras Light",
+    "status": "Completed",
+    "repoUrl": "https://github.com/santhoshle/unreal-practice/tree/main/PingPong"
+  },
+  {
+    "title": "Road Crossing",
+    "year": 2025,
+    "summary": "An arcade-style road crossing game in Unreal Engine featuring grid-based movement, obstacles, collectibles and a scoring system.",
+    "author": "Solaras Light",
+    "status": "Completed",
+    "repoUrl": "https://github.com/santhoshle/unreal-practice/tree/main/RoadCrossing"
+  },
+  {
+    "title": "HTTP Server from Scratch (Java)",
+    "year": 2025,
+    "summary": "A CodeCrafters challenge solution: an HTTP/1.1 server built from scratch in Java with request parsing, routing, persistent connections, gzip compression and file read/write endpoints.",
+    "author": "Santhosh Laguduwa",
+    "status": "Completed",
+    "repoUrl": "https://github.com/santhoshle/codecrafters-http-server-java"
+  },
+  {
+    "title": "HTTP Server from Scratch (JavaScript)",
+    "year": 2025,
+    "summary": "The same CodeCrafters HTTP/1.1 server challenge implemented in JavaScript (Node.js): request parsing, routing, keep-alive connections, gzip compression and file endpoints.",
+    "author": "Santhosh Laguduwa",
+    "status": "Completed",
+    "repoUrl": "https://github.com/santhoshle/codecrafters-http-server-javascript"
+  },
+  {
+    "title": "Portfolio Website",
+    "year": 2025,
+    "summary": "This site. A personal portfolio built with Next.js, TypeScript and Tailwind CSS, covering my IAM and full-stack work along with this roadmap.",
+    "author": "Santhosh Laguduwa",
+    "status": "Completed",
+    "repoUrl": "https://github.com/santhoshle/portfolio",
+    "demoUrl": "https://santhoshle.dev"
+  },
+  {
+    "title": "Solaras Light Portfolio",
+    "year": 2026,
+    "summary": "A game development portfolio for Solaras Light.",
+    "author": "Solaras Light",
+    "status": "Completed",
+    "repoUrl": "https://github.com/santhoshle/solaraslightportfolio",
+    "demoUrl": "https://solaraslightportfolio.vercel.app"
+  },
+  {
+    "title": "Canyon Salvo",
+    "year": 2026,
+    "summary": "A turn-based missile duel built with libGDX. Each turn both sides place a missile launcher and a flare dispenser, then fire at once, and the enemy learns your habits. Runs on desktop, in the browser and on Android.",
+    "author": "Solaras Light",
+    "status": "Completed",
+    "repoUrl": "https://github.com/santhoshle/CanyonSalvo",
+    "demoUrl": "https://solaraslight.itch.io/canyon-salvo"
+  },
+  {
+    "title": "TN5250 Emulator",
+    "year": 2026,
+    "summary": "A modern IBM i (AS/400) 5250 terminal emulator built from scratch in Java 17. The protocol engine (Telnet negotiation, 5250 data stream parsing, EBCDIC conversion) is fully independent of the UI, with two front ends on top: a JavaFX desktop client and a Spring Boot browser client.",
+    "author": "Santhosh Laguduwa",
+    "status": "In Progress"
+  },
+  {
+    "title": "OAuth 2.0 Server From Scratch",
+    "year": 2026,
+    "summary": "A fully spec-compliant Authorization Server in Spring Boot, built without the Spring Authorization Server abstraction so that every grant type and token behavior is implemented by hand.",
+    "author": "Santhosh Laguduwa",
+    "status": "In Progress"
+  },
+  {
+    "title": "Untitled Endless Driving Game",
+    "year": 2026,
+    "summary": "An endless driving game with a cyber style, built with Unreal Engine and targeting Android.",
+    "author": "Solaras Light",
+    "status": "In Progress"
+  },
+  {
+    "title": "Untitled Mailing Framework",
+    "summary": "A Java mailing framework to manage sending mail from Java applications.",
+    "author": "Santhosh Laguduwa",
+    "status": "Planned"
+  },
+  {
+    "title": "Polyglot IAM Suite",
+    "summary": "One Keycloak authorization server in front of three independently written resource servers — Spring Boot (Java), FastAPI (Python) and Express.js (Node) — each enforcing the same JWT validation and RBAC rules through its own idiomatic security stack.",
+    "author": "Santhosh Laguduwa",
+    "status": "Planned"
+  },
+  {
+    "title": "Zero-Downtime Legacy Migration Utility",
+    "summary": "Migrates thousands of users from an old database or a legacy Okta instance into Keycloak using a lazy (just-in-time) migration strategy, so users see no service disruption or forced password resets on day one.",
+    "author": "Santhosh Laguduwa",
+    "status": "Planned"
+  },
+  {
+    "title": "Untitled Table Library",
+    "summary": "A not-so-simple grid library.",
+    "author": "Santhosh Laguduwa",
+    "status": "Planned"
+  },
+  {
+    "title": "SSO Hub — Keycloak Identity Broker",
+    "summary": "Federates three identity sources — Okta (corporate employees), a SAML 2.0 IdP and Google (customer/social login) — behind one Keycloak realm, with a Spring Boot API that normalizes every provider's claims into one internal identity shape. Covers the simpler two-IdP Okta + Keycloak employee/customer bridge as a base case along the way.",
+    "author": "Santhosh Laguduwa",
+    "status": "Planned"
+  },
+  {
+    "title": "The CI/CD IAM Automation Pipeline",
+    "summary": "Manages identity configuration entirely as code, so Dev, Staging and Prod environments deploy deterministically without manual changes in the admin UI.",
+    "author": "Santhosh Laguduwa",
+    "status": "Planned"
+  },
+  {
+    "title": "Untitled Racing Game",
+    "summary": "A racing game in the spirit of SkyRoads and Nitronic Rush.",
+    "author": "Solaras Light",
+    "status": "Planned"
+  },
+  {
+    "title": "Microservice Mesh Security & Token Exchange",
+    "summary": "Secures an ecosystem of Spring Boot microservices with the Backend-for-Frontend (BFF) pattern, keeping raw JWT access tokens out of browser storage to minimize security vulnerabilities.",
+    "author": "Santhosh Laguduwa",
+    "status": "Planned"
+  },
+  {
+    "title": "Game Engine Auth Toolkit",
+    "summary": "Implements the OAuth 2.0 Device Authorization Flow and PKCE natively inside Unreal Engine 5, Unity and Godot, all authenticated against a real Keycloak server.",
+    "author": "Santhosh Laguduwa",
+    "status": "Planned"
+  }
+]

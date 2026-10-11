@@ -1,14 +1,76 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
+/* Fonts are self-hosted via next/font in Layout.tsx */
+@theme inline {
+  --font-primary: var(--font-montserrat), sans-serif;
+  --font-secondary: var(--font-open-sans), sans-serif;
+}
 
 @theme {
-  --font-primary: Montserrat, sans-serif;
-  --font-secondary: Open Sans, sans-serif;
 
   --color-background: oklch(32.44% 0.023 264.18);
   --color-text: oklch(92.86% 0.007 277.16);
   --color-primary: oklch(69.42% 0.074 252.04);
   --color-accent: oklch(45.87% 0.036 262.34);
   --color-card: oklch(27.67% 0.018 266.32);
+}
+
+/*
+  Roadmap palettes, picked per card by author:
+    .palette-santhosh -> santhoshle.dev colours (Nord)
+    .palette-solaras  -> solaraslight.com colours (slate / cyan / purple)
+*/
+.palette-santhosh {
+  --rm-panel: #2e3440;
+  --rm-text: #e5e9f0;
+  --rm-body: #d1d5dc;
+  --rm-muted: #99a1af;
+  --rm-primary: #81a1c1;
+  --rm-secondary: #88c0d0;
+  --rm-on-primary: #2e3440;
+  --rm-border: #4c566a;
+  --rm-completed: #a3be8c;
+  --rm-inprogress: #ebcb8b;
+  --rm-planned: #b48ead;
+}
+
+.palette-solaras {
+  --rm-panel: #1e293b;
+  --rm-text: #e2e8f0;
+  --rm-body: #cbd5e1;
+  --rm-muted: #94a3b8;
+  --rm-primary: #38bdf8;
+  --rm-secondary: #a855f7;
+  --rm-on-primary: #0f172a;
+  --rm-border: #334155;
+  --rm-completed: #4ade80;
+  --rm-inprogress: #fbbf24;
+  --rm-planned: #a855f7;
+}
+
+.status-completed { --rm-status: var(--rm-completed); }
+.status-inprogress { --rm-status: var(--rm-inprogress); }
+.status-planned { --rm-status: var(--rm-planned); }
+
+/* Page fade-in and card hover, done in CSS so no animation library ships to the browser */
+@theme {
+  --animate-fade-in: fade-in 0.8s ease-out;
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+
+@utility hover-lift {
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in { animation: none; }
+  .hover-lift:hover { transform: none; }
 }

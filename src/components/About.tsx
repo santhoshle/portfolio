@@ -1,7 +1,7 @@
 import React from 'react';
-import MarkdownWrapper from './MarkdownWrapper';
 
 interface AboutProps {
+  // HTML rendered from data.json markdown at build time
   about: string[];
 }
 
@@ -9,9 +9,7 @@ export default function About({ about = [] }: AboutProps) {
   return (
     <section className="space-y-4">
       {about.map((para, idx) => (
-        <div key={idx} className="text-lg leading-relaxed">
-          <MarkdownWrapper content={para} />
-        </div>
+        <div key={idx} className="text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: para }} />
       ))}
     </section>
   );

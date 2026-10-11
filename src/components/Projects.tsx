@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 interface Project {
   title: string;
@@ -17,11 +16,9 @@ export default function Projects({ projects = [] }: ProjectProps) {
     <section className="space-y-4">
       <h2 className="text-2xl pb-4 font-bold text-primary">Projects</h2>
       {projects.map((project, idx) => (
-        <motion.div
+        <div
           key={idx}
-          className="bg-card p-4 rounded-lg shadow"
-          whileHover={{ scale: 1.02 }}
-          transition={{ duration: 0.3 }}
+          className="bg-card p-4 rounded-lg shadow hover-lift"
         >
           <h3 className="text-xl font-semibold text-primary">{project.title}</h3>
           <p className="text-gray-300 mt-2">{project.description}</p>
@@ -33,7 +30,7 @@ export default function Projects({ projects = [] }: ProjectProps) {
           >
             View Project
           </a>
-        </motion.div>
+        </div>
       ))}
     </section>
   );
