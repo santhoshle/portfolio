@@ -28,7 +28,32 @@ Then open http://localhost:3000 🚀
 
 ## 🧭 Pages
 
-Each menu item is its own route: `/` (About), `/experience`, `/projects` and `/roadmap`. Menus come from `intro.menus` in `src/data/data.json` (`id`, `title`, `path`).
+Each menu item is its own route: `/` (About), `/experience`, `/projects`, `/roadmap` and `/blog`. Menus come from `intro.menus` in `src/data/data.json` (`id`, `title`, `path`).
+
+## ✍️ Writing Blog Posts
+
+Posts are Markdown files in `src/content/blog/`. The file name is the URL: `my-post.md` → `/blog/my-post`.
+
+```markdown
+---
+title: "Post title"
+description: "One-line summary shown in the post list."
+date: 2026-10-17
+tags: ["iam", "keycloak"]
+draft: false
+---
+
+Post body in Markdown.
+```
+
+| Field | Notes |
+|---|---|
+| `title`, `date` | Required. `date` is `YYYY-MM-DD`; posts are listed newest first. |
+| `description` | Optional summary for the list and the page's meta description. |
+| `tags` | Optional inline list. Clicking a tag filters the list (`/blog?q=<tag>`). |
+| `draft` | `true` keeps the post off the site. |
+
+Images go in `public/images/blog/` and are referenced as `![alt](/images/blog/file.png)`. Raw HTML in posts is not rendered.
 
 ## 🗺 Editing the Roadmap
 

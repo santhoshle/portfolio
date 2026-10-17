@@ -16,6 +16,10 @@ export default function Header({ data }: HeaderProps) {
     menus = [],
   } = data || {};
 
+  // A menu stays active on its sub-pages too (e.g. Blog on /blog/[slug])
+  const isActive = (path: string) =>
+    pathname === path || (path !== '/' && pathname.startsWith(`${path}/`));
+
   return (
     <>
       <nav
@@ -27,7 +31,7 @@ export default function Header({ data }: HeaderProps) {
             href={menu.path}
             aria-current={pathname === menu.path ? 'page' : undefined}
             className={`text-m px-4 py-2 rounded hover:underline transition-all ${
-              pathname === menu.path ? 'text-primary' : 'text-text'
+              isActive(menu.path) ? 'text-primary' : 'text-text'
             }`}
           >
             {menu.title}

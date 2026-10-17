@@ -23,6 +23,11 @@
           "id": "roadmap",
           "title": "Roadmap",
           "path": "/roadmap"
+        },
+        {
+          "id": "blog",
+          "title": "Blog",
+          "path": "/blog"
         }
       ]
     },

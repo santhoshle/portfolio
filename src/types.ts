@@ -40,6 +40,21 @@ export interface MenuItem {
     socialLinks: SocialLink[];
   }
 
+  // A post in src/content/blog (see README for frontmatter fields)
+  export interface BlogPostMeta {
+    slug: string;
+    title: string;
+    description: string;
+    date: string;
+    tags: string[];
+    draft: boolean;
+    readingMinutes: number;
+  }
+
+  export interface BlogPost extends BlogPostMeta {
+    html: string;
+  }
+
   // An entry in src/data/roadmap.json (see README for field notes)
   export interface RoadmapItem {
     title: string;
